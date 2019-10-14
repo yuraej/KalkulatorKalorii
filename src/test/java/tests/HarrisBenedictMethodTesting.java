@@ -57,10 +57,11 @@ public class HarrisBenedictMethodTesting extends BaseTest {
     }
 
     @Test(expectedExceptions = {AssertionError.class})
-    public void checkResultDependingOnInputField() {
-        chooseHarrisBenedictMethod();
+    public void checkResultDependingOnInputFieldAge() {
+
         enterData(25, 50, 180);
 
+        $("#submit").shouldBe(Condition.enabled);
         String firstValueConstWeight = getValueConstWeightString();
         String firstValueLosingWeight = getValueLosingWeightString();
         String firstValueFastLosingWeight = getValueFastLosingWeightString();
@@ -75,28 +76,50 @@ public class HarrisBenedictMethodTesting extends BaseTest {
         assertEquals(firstValueConstWeight, secondValueConstWeight);
         assertEquals(firstValueLosingWeight, secondValueLosingWeight);
         assertEquals(firstValueFastLosingWeight, secondValueFastLosingWeight);
+    }
 
-        enterData(50, 100, 180);
+    @Test(expectedExceptions = {AssertionError.class})
+    public void checkResultDependingOnInputFieldWeight() {
 
-        $("#submit").shouldBe(Condition.enabled);
-        String thirdValueConstWeight = getValueConstWeightString();
-        String thirdValueLosingWeight = getValueLosingWeightString();
-        String thirdValueFastLosingWeight = getValueFastLosingWeightString();
-
-        assertEquals(thirdValueConstWeight, secondValueConstWeight);
-        assertEquals(thirdValueLosingWeight, secondValueLosingWeight);
-        assertEquals(thirdValueFastLosingWeight, secondValueFastLosingWeight);
-
-        enterData(50, 100, 210);
+        enterData(25, 50, 180);
 
         $("#submit").shouldBe(Condition.enabled);
-        String fourValueConstWeight = getValueConstWeightString();
-        String fourValueLosingWeight = getValueLosingWeightString();
-        String fourValueFastLosingWeight = getValueFastLosingWeightString();
+        String firstValueConstWeight = getValueConstWeightString();
+        String firstValueLosingWeight = getValueLosingWeightString();
+        String firstValueFastLosingWeight = getValueFastLosingWeightString();
 
-        assertEquals(thirdValueConstWeight, fourValueConstWeight);
-        assertEquals(thirdValueLosingWeight, fourValueLosingWeight);
-        assertEquals(thirdValueFastLosingWeight, fourValueFastLosingWeight);
+        enterData(25, 150, 180);
+
+        $("#submit").shouldBe(Condition.enabled);
+        String secondValueConstWeight = getValueConstWeightString();
+        String secondValueLosingWeight = getValueLosingWeightString();
+        String secondValueFastLosingWeight = getValueFastLosingWeightString();
+
+        assertEquals(firstValueConstWeight, secondValueConstWeight);
+        assertEquals(firstValueLosingWeight, secondValueLosingWeight);
+        assertEquals(firstValueFastLosingWeight, secondValueFastLosingWeight);
+    }
+
+    @Test(expectedExceptions = {AssertionError.class})
+    public void checkResultDependingOnInputFieldGrown() {
+
+        enterData(25, 50, 180);
+
+        $("#submit").shouldBe(Condition.enabled);
+        String firstValueConstWeight = getValueConstWeightString();
+        String firstValueLosingWeight = getValueLosingWeightString();
+        String firstValueFastLosingWeight = getValueFastLosingWeightString();
+
+        enterData(25, 50, 210);
+
+        $("#submit").shouldBe(Condition.enabled);
+        String secondValueConstWeight = getValueConstWeightString();
+        String secondValueLosingWeight = getValueLosingWeightString();
+        String secondValueFastLosingWeight = getValueFastLosingWeightString();
+
+        assertEquals(firstValueConstWeight, secondValueConstWeight);
+        assertEquals(firstValueLosingWeight, secondValueLosingWeight);
+        assertEquals(firstValueFastLosingWeight, secondValueFastLosingWeight);
     }
 
     @DataProvider(parallel = true)

@@ -14,6 +14,10 @@ public class InputCorrectData extends BaseTest {
         assertEquals(getValueConstWeightString(), getValueConstWeightTable().concat(" ккал/день"));
         assertEquals(getValueLosingWeightString(), getValueLosingWeightTable().concat(" ккал/день"));
         assertEquals(getValueFastLosingWeightString(), getValueFastLosingWeightTable().concat(" ккал/день"));
+
+    /*    validateGeneralDetails(1667, 1334, 1000);
+        validateDetailsByDay("Понедельник", 1000, 1334, 1667);
+        validateDetailsByDay("Вторник", 1000, 1334, 1667);*/
     }
 
     @DataProvider(parallel = true)

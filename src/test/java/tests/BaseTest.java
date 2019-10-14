@@ -13,6 +13,11 @@ public class BaseTest {
         open("https://www.calc.ru/kalkulyator-kalorii.html");
     }
 
+    public void validateGeneralDetails(int a, int b, int c) {
+        //Найти элемент на сайте и взять текст
+        //Сравнить что текст с сайта совпадает с аргументов метода
+    }
+
     public void getCalculate() {
         $("#submit").click();
     }
