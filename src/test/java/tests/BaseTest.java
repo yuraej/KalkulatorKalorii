@@ -1,16 +1,32 @@
 package tests;
 
-import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import steps.ResultsSteps;
+import steps.InputDataSteps;
+import utils.AllureUtils;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class BaseTest {
+    InputDataSteps input;
+    ResultsSteps result;
+
     @BeforeMethod
     public void openSite() {
+        Configuration.startMaximized = true;
         open("https://www.calc.ru/kalkulyator-kalorii.html");
+        input = new InputDataSteps();
+        result = new ResultsSteps();
+    }
+
+    @AfterMethod
+    public void getScreenShot() {
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     public void validateGeneralDetails(int a, int b, int c) {
