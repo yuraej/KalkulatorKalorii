@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/InputFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ResultsFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/GetResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/InputData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HarrisBenedictMethodTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HarrisBenedictMethodTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/InputCorrectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/InputCorrectData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MiflinSanJeroMethodTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MiflinSanJeroMethodTesting.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="backup" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,33 +79,8 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Calculator">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tests.Calculator" />
-      <module name="KalkulatorKalorii" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HarrisBenedictMethodTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.InputCorrectData">
+    <configuration name="InputCorrectData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="KalkulatorKalorii" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +89,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HarrisBenedictMethodTesting" />
+      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectData" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -122,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HarrisBenedictMethodTesting.checkChooseResult" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCorrectData.checkResultTable" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="KalkulatorKalorii" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +106,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HarrisBenedictMethodTesting" />
-      <option name="METHOD_NAME" value="checkChooseResult" />
+      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectData" />
+      <option name="METHOD_NAME" value="checkResultTable" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputCorrectData.enterCorrectData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="KalkulatorKalorii" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectData" />
+      <option name="METHOD_NAME" value="enterCorrectData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -175,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
+        <item itemvalue="TestNG.InputCorrectData" />
+        <item itemvalue="TestNG.InputCorrectData.checkResultTable" />
+        <item itemvalue="TestNG.InputCorrectData.enterCorrectData" />
         <item itemvalue="TestNG.tests" />
-        <item itemvalue="TestNG.HarrisBenedictMethodTesting" />
         <item itemvalue="TestNG.MiflinSanJeroMethodTesting" />
-        <item itemvalue="TestNG.HarrisBenedictMethodTesting.checkChooseResult" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +206,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -244,6 +239,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1189" y="257" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1570936647316" />
+    <state x="1278" y="430" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1571218293157">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1278" y="430" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571218293157" />
     <state x="1114" y="287" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1570947849334">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -252,22 +251,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1164" y="296" width="447" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1571058945592" />
-    <state width="919" height="220" key="GridCell.Tab.0.bottom" timestamp="1571058958622">
+    <state width="919" height="220" key="GridCell.Tab.0.bottom" timestamp="1571227061670">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1571058958622" />
-    <state width="919" height="220" key="GridCell.Tab.0.center" timestamp="1571058958621">
+    <state width="919" height="220" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1571227061670" />
+    <state width="919" height="220" key="GridCell.Tab.0.center" timestamp="1571227061669">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1571058958621" />
-    <state width="919" height="220" key="GridCell.Tab.0.left" timestamp="1571058958621">
+    <state width="919" height="220" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1571227061669" />
+    <state width="919" height="220" key="GridCell.Tab.0.left" timestamp="1571227061669">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1571058958621" />
-    <state width="919" height="220" key="GridCell.Tab.0.right" timestamp="1571058958621">
+    <state width="919" height="220" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1571227061669" />
+    <state width="919" height="220" key="GridCell.Tab.0.right" timestamp="1571227061669">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571058958621" />
+    <state width="919" height="220" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571227061669" />
     <state width="1032" height="177" key="GridCell.Tab.1.bottom" timestamp="1571052846521">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -284,10 +283,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1032" height="177" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571052846521" />
-    <state x="964" y="284" width="824" height="508" key="IDE.errors.dialog" timestamp="1571053181365">
+    <state x="964" y="284" width="824" height="508" key="IDE.errors.dialog" timestamp="1571218313363">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="964" y="284" width="824" height="508" key="IDE.errors.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571053181365" />
+    <state x="964" y="284" width="824" height="508" key="IDE.errors.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571218313363" />
     <state x="914" y="196" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1570935449039">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -304,6 +303,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1037" y="365" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571047647114" />
+    <state x="1178" y="435" width="509" height="205" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1571218283692">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1178" y="435" width="509" height="205" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate/0.27.1920.1053@0.27.1920.1053" timestamp="1571218283692" />
     <state x="1045" y="246" key="run.anything.popup" timestamp="1571057274703">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
