@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/InputCorrectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/InputCorrectDataTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +73,8 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="TestNG.InputCorrectData">
-    <configuration name="InputCorrectData" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.InputCorrectDataTest">
+    <configuration name="InputCorrectDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="KalkulatorKalorii" />
       <extension name="coverage">
         <pattern>
@@ -83,7 +83,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectData" />
+      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectDataTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -91,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputCorrectData.checkResultTable" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCorrectDataTest.checkResultTable" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="KalkulatorKalorii" />
       <extension name="coverage">
         <pattern>
@@ -100,7 +100,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectData" />
+      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectDataTest" />
       <option name="METHOD_NAME" value="checkResultTable" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -109,7 +109,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputCorrectData.enterCorrectData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCorrectDataTest.enterCorrectData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="KalkulatorKalorii" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +118,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectData" />
+      <option name="MAIN_CLASS_NAME" value="tests.InputCorrectDataTest" />
       <option name="METHOD_NAME" value="enterCorrectData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -162,9 +162,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.InputCorrectData" />
-        <item itemvalue="TestNG.InputCorrectData.checkResultTable" />
-        <item itemvalue="TestNG.InputCorrectData.enterCorrectData" />
+        <item itemvalue="TestNG.InputCorrectDataTest" />
+        <item itemvalue="TestNG.InputCorrectDataTest.checkResultTable" />
+        <item itemvalue="TestNG.InputCorrectDataTest.enterCorrectData" />
         <item itemvalue="TestNG.tests" />
         <item itemvalue="TestNG.MiflinSanJeroMethodTesting" />
       </list>
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571227154498</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added checkList">
+      <created>1571233926264</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571233926264</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +225,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
     <MESSAGE value="redesigned the architecture of the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="redesigned the architecture of the project" />
+    <MESSAGE value="added checkList" />
+    <option name="LAST_COMMIT_MESSAGE" value="added checkList" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="175" width="898" height="725" key="#GreenTest.enterGreenData" timestamp="1570937099909">
@@ -253,22 +261,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1164" y="296" width="447" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1571058945592" />
-    <state width="919" height="220" key="GridCell.Tab.0.bottom" timestamp="1571227740878">
+    <state width="919" height="220" key="GridCell.Tab.0.bottom" timestamp="1571234109513">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1571227740878" />
-    <state width="919" height="220" key="GridCell.Tab.0.center" timestamp="1571227740878">
+    <state width="919" height="220" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1571234109513" />
+    <state width="919" height="220" key="GridCell.Tab.0.center" timestamp="1571234109513">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1571227740878" />
-    <state width="919" height="220" key="GridCell.Tab.0.left" timestamp="1571227740878">
+    <state width="919" height="220" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1571234109513" />
+    <state width="919" height="220" key="GridCell.Tab.0.left" timestamp="1571234109512">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1571227740878" />
-    <state width="919" height="220" key="GridCell.Tab.0.right" timestamp="1571227740878">
+    <state width="919" height="220" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1571234109512" />
+    <state width="919" height="220" key="GridCell.Tab.0.right" timestamp="1571234109513">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571227740878" />
+    <state width="919" height="220" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571234109513" />
     <state width="1032" height="177" key="GridCell.Tab.1.bottom" timestamp="1571052846521">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -293,10 +301,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="914" y="196" width="924" height="684" key="Maven.ArtifactSearchDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1570935449039" />
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571227208252">
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571233947965">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571227208252" />
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571233947965" />
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1571055203330">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

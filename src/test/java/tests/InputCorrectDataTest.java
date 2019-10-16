@@ -8,7 +8,7 @@ import steps.InputData;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class InputCorrectData extends BaseTest {
+public class InputCorrectDataTest extends BaseTest {
     InputData input = new InputData();
     GetResult result = new GetResult();
 
