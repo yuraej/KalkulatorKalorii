@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/InputFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ResultsFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/GetResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/InputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/InputCorrectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/InputCorrectData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571059265119</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="redesigned the architecture of the project">
+      <created>1571227154497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571227154498</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +217,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project" />
+    <MESSAGE value="redesigned the architecture of the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="redesigned the architecture of the project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="175" width="898" height="725" key="#GreenTest.enterGreenData" timestamp="1570937099909">
@@ -251,22 +253,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1164" y="296" width="447" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1571058945592" />
-    <state width="919" height="220" key="GridCell.Tab.0.bottom" timestamp="1571227061670">
+    <state width="919" height="220" key="GridCell.Tab.0.bottom" timestamp="1571227740878">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1571227061670" />
-    <state width="919" height="220" key="GridCell.Tab.0.center" timestamp="1571227061669">
+    <state width="919" height="220" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1571227740878" />
+    <state width="919" height="220" key="GridCell.Tab.0.center" timestamp="1571227740878">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1571227061669" />
-    <state width="919" height="220" key="GridCell.Tab.0.left" timestamp="1571227061669">
+    <state width="919" height="220" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1571227740878" />
+    <state width="919" height="220" key="GridCell.Tab.0.left" timestamp="1571227740878">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1571227061669" />
-    <state width="919" height="220" key="GridCell.Tab.0.right" timestamp="1571227061669">
+    <state width="919" height="220" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1571227740878" />
+    <state width="919" height="220" key="GridCell.Tab.0.right" timestamp="1571227740878">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="919" height="220" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571227061669" />
+    <state width="919" height="220" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571227740878" />
     <state width="1032" height="177" key="GridCell.Tab.1.bottom" timestamp="1571052846521">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -291,18 +293,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="914" y="196" width="924" height="684" key="Maven.ArtifactSearchDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1570935449039" />
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571059398245">
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571227208252">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571059398245" />
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571227208252" />
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1571055203330">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571055203330" />
-    <state x="1037" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1571047647114">
+    <state x="1037" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1571229401593">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1037" y="365" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571047647114" />
+    <state x="1037" y="365" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571229401593" />
     <state x="1178" y="435" width="509" height="205" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1571218283692">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
