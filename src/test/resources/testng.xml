@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test suite">
-    <test name="TEST with Cucumber">
+    <test name="TEST input correct data">
         <classes>
-            <class name="steps.SearchHotelSteps"/>
-            <parameter name="nameHotel" value="Турист"/>
+            <class name="tests.InputCorrectDataTest"/>
+        </classes>
+    </test>
+    <test name="TEST input uncorrected data">
+        <classes>
+            <class name="tests.InputWrongDataAgeTest"/>
+            <class name="tests.InputWrongDataWeightTest"/>
+            <class name="tests.InputWrongDataGrowthTest"/>
         </classes>
     </test>
 </suite>
