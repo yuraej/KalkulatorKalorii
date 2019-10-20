@@ -4,6 +4,8 @@ import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import pages.InputComponentPage;
+import pages.ResultsComponentPage;
 import steps.InputDataSteps;
 import steps.ResultsSteps;
 import utils.AllureUtils;
@@ -13,15 +15,15 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class BaseTest {
-    InputDataSteps input;
-    ResultsSteps result;
+    InputComponentPage input = new InputComponentPage();
+    ResultsSteps result = new ResultsSteps();
+    InputDataSteps inputAllData = new InputDataSteps();
+    ResultsComponentPage resultsComponent = new ResultsComponentPage();
 
     @BeforeMethod
     public void openSite() {
-        Configuration.startMaximized = true;
+       // Configuration.startMaximized = true;
         open("https://www.calc.ru/kalkulyator-kalorii.html");
-        input = new InputDataSteps();
-        result = new ResultsSteps();
     }
 
     @AfterMethod

@@ -10,7 +10,7 @@ public class InputWrongDataAgeTest extends BaseTest {
             description = "ввод значений в поле ВОЗРАСТ")
     @Description(value = "Тест проверяет наличия сообщения при вводе нечисленных значений в поле возраст")
     public void enterWrongData(String age, String message) {
-        input.inputDataAge(age);
+        input.enterDataFieldAge(age);
         result.getErrorMessage(message);
     }
 
@@ -18,7 +18,7 @@ public class InputWrongDataAgeTest extends BaseTest {
             description = "ввод значений в поле ВОЗРАСТ")
     @Description(value = "Тест проверяет наличия сообщения при вводе численных некорректных значений в поле возраст")
     public void enterWrongData(int age, String message) {
-        input.inputDataAge(age);
+        input.enterDataFieldAge(age);
         result.getErrorMessage(message);
     }
 

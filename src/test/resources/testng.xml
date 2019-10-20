@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test suite">
-    <test name="TEST input correct data">
+    <test name="TEST проверка калькулятора калорий">
         <classes>
             <class name="tests.InputCorrectDataTest"/>
-        </classes>
-    </test>
-    <test name="TEST input uncorrected data">
-        <classes>
             <class name="tests.InputWrongDataAgeTest"/>
             <class name="tests.InputWrongDataWeightTest"/>
             <class name="tests.InputWrongDataGrowthTest"/>
+            <class name="tests.HarrisBenedictMethodTest"/>
+            <class name="tests.MiflinSanJeroMethodTest"/>
         </classes>
     </test>
 </suite>

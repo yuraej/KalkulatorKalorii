@@ -1,8 +1,10 @@
 package steps;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import pages.ResultsComponentPage;
 
+import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selenide.$;
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -12,16 +14,19 @@ public class ResultsSteps {
     @Step("ожидаемое количество каллорий для быстрого похудения {fastLosingWeight}\n" +
             "похудения {losingWeight}\n" +
             "неизменного веса {constWeight}")
-    public void validateGeneralDetails(String constWeight, String losingWeight, String fastLosingWeight) {
-        assertEquals(result.getValueConstWeightString(), constWeight.concat(" ккал/день"));
-        assertEquals(result.getValueLosingWeightString(), losingWeight.concat(" ккал/день"));
-        assertEquals(result.getValueFastLosingWeightString(), fastLosingWeight.concat(" ккал/день"));
+
+    public void validateDetails(String constWeight, String losingWeight, String fastLosingWeight) {
+        $(By.id("submit")).shouldHave(value("Сколько нужно калорий в день"));
+        assertEquals(result.getValueConstWeightString(), constWeight);
+        assertEquals(result.getValueLosingWeightString(), losingWeight);
+        assertEquals(result.getValueFastLosingWeightString(), fastLosingWeight);
     }
 
     @Step("Ожидаемое количество каллорий для дня {day}: быстрая потеря веса - {fastLosingWeight}\n" +
             "потеря веса - {losingWeight}\n" +
             "неизменный вес - {constWeight}")
-    public void validateTableDetails(String day, String fastLosingWeight, String losingWeight, String constWeight) {
+    public void validateDetails(String day, String fastLosingWeight, String losingWeight, String constWeight) {
+        $(By.id("submit")).shouldHave(value("Сколько нужно калорий в день"));
         assertEquals(result.getValueConstWeightTable(day), constWeight);
         assertEquals(result.getValueLosingWeightTable(day), losingWeight);
         assertEquals(result.getValueFastLosingWeightTable(day), fastLosingWeight);
@@ -31,4 +36,5 @@ public class ResultsSteps {
     public void getErrorMessage(String message) {
         assertEquals($("#error").getText(), message);
     }
+
 }

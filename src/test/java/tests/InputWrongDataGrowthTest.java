@@ -12,9 +12,9 @@ public class InputWrongDataGrowthTest extends BaseTest {
             description = "ввод значений в поле РОСТ")
     @Description(value = "Тест проверяет наличия сообщения при вводе нечисленных значений символов в поле рост")
     public void enterWrongData(int age, int weight, String growth, String message) {
-        input.inputDataAge(age);
-        input.inputDataWeight(weight);
-        input.inputDataGrowth(growth);
+        input.enterDataFieldAge(age)
+                .enterDataFieldWeight(weight)
+                .enterDataFieldGrowth(growth);
         result.getErrorMessage(message);
     }
 
@@ -22,9 +22,9 @@ public class InputWrongDataGrowthTest extends BaseTest {
             description = "ввод значений в поле РОСТ")
     @Description(value = "Тест проверяет наличия сообщения при вводе численных некорректных значений символов в поле рост")
     public void enterWrongData(int age, int weight, int growth, String message) {
-        input.inputDataAge(age);
-        input.inputDataWeight(weight);
-        input.inputDataGrowth(growth);
+        input.enterDataFieldAge(age)
+                .enterDataFieldWeight(weight)
+                .enterDataFieldGrowth(growth);
         result.getErrorMessage(message);
     }
 

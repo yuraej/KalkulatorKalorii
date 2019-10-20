@@ -3,8 +3,6 @@ package tests;
 import io.qameta.allure.Description;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import steps.InputDataSteps;
-import steps.ResultsSteps;
 
 public class InputWrongDataWeightTest extends BaseTest {
 
@@ -12,8 +10,8 @@ public class InputWrongDataWeightTest extends BaseTest {
             description = "ввод значений в поле ВЕС")
     @Description(value = "Тест проверяет наличие сообщения при вводе нечисленных символов в поле вес")
     public void enterWrongData(int age, String weight, String message) {
-        input.inputDataAge(age);
-        input.inputDataWeight(weight);
+        input.enterDataFieldAge(age)
+                .enterDataFieldWeight(weight);
         result.getErrorMessage(message);
     }
 
@@ -21,8 +19,8 @@ public class InputWrongDataWeightTest extends BaseTest {
             description = "ввод значений в поле ВЕС")
     @Description(value = "Тест проверяет наличия сообщения при вводе численных некорректных некорректных значений в поле вес")
     public void enterWrongData(int age, int weight, String message) {
-        input.inputDataAge(age);
-        input.inputDataWeight(weight);
+        input.enterDataFieldAge(age)
+                .enterDataFieldWeight(weight);
         result.getErrorMessage(message);
     }
 
