@@ -1,6 +1,5 @@
 package tests;
 
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class MiflinSanJeroMethodTest extends BaseTest {
@@ -17,7 +16,19 @@ public class MiflinSanJeroMethodTest extends BaseTest {
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
     }
 
-    @Test(description = "зависимость результатов от выбор единиц измерения",
+    @Test(description = "зависимость результатов от выбор единиц измерения веса",
+            expectedExceptions = {AssertionError.class})
+    public void checkChoosePound() {
+        inputAllData.inputCorrectAllData(47, 75, 199);
+        String constWeight = resultsComponent.getValueConstWeightString();
+        String losingWeight = resultsComponent.getValueLosingWeightString();
+        String fastLosingWeight = resultsComponent.getValueFastLosingWeightString();
+        input.choosePound()
+                .getCalculate();
+        result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+    }
+
+    @Test(description = "зависимость результатов от выбор единиц измерения результатов расчета",
             expectedExceptions = {AssertionError.class})
     public void checkChooseResult() {
         inputAllData.inputCorrectAllData(47, 75, 199);
@@ -63,7 +74,7 @@ public class MiflinSanJeroMethodTest extends BaseTest {
     }
 
     @Test(description = "проверка зависимости результата расчета от активности",
-            dataProvider = "dataForCheckChooseIntensiveLoad",
+            dataProvider = "dataForCheckChooseIntensiveLoad", dataProviderClass = DataProviderClass.class,
             expectedExceptions = {AssertionError.class})
     public void checkChooseIntensiveOfLoad(String load) {
         inputAllData.inputCorrectAllData(47, 75, 199);
@@ -74,18 +85,4 @@ public class MiflinSanJeroMethodTest extends BaseTest {
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
     }
-
-    @DataProvider(parallel = true)
-    public Object[][] dataForCheckChooseIntensiveLoad() {
-        return new Object[][]{
-                {"Основной обмен"},
-                {"минимум/отсутствие физической нагрузки"},
-                {"3 раза в неделю"},
-                {"5 раз в неделю"},
-                {"5 раз в неделю (интенсивно)"},
-                {"Каждый день интенсивно или два раза в день"},
-                {"Ежедневная физическая нагрузка+физическая работа"}
-        };
-    }
-
 }

@@ -22,8 +22,9 @@ public class InputComponentPage {
     }
 
     @Step("Ввод символьных данных в поле ВОЗРАСТ: {age}")
-    public void enterDataFieldAge(String age) {
+    public InputComponentPage enterDataFieldAge(String age) {
         $(By.name("age")).setValue(age);
+        return this;
     }
 
     @Step("Ввод численных данных в поле ВЕС: {weight}")
@@ -33,8 +34,9 @@ public class InputComponentPage {
     }
 
     @Step("Ввод символьных данных в поле ВЕС: {weight}")
-    public void enterDataFieldWeight(String weight) {
+    public InputComponentPage enterDataFieldWeight(String weight) {
         $(By.name("weight")).setValue(weight);
+        return this;
     }
 
     @Step("Ввод численных данных в поле РОСТ: {growth}")
@@ -44,8 +46,9 @@ public class InputComponentPage {
     }
 
     @Step("Ввод символьных данных в поле РОСТ: {growth}")
-    public void enterDataFieldGrowth(String growth) {
+    public InputComponentPage enterDataFieldGrowth(String growth) {
         $(By.name("sm")).setValue(growth);
+        return this;
     }
 
     @Step("смена пола на жениский")
@@ -70,6 +73,18 @@ public class InputComponentPage {
     public InputComponentPage chooseIntensityOfLoad(String load) {
         $(By.id("activity")).selectOption(load);
         return this;
+    }
+
+    @Step("смена единицы измерения веса на фунты")
+    public InputComponentPage choosePound() {
+        $(By.xpath("//*[text()=' в фунтах']/span")).click();
+        return  this;
+    }
+
+    @Step("смена единицы измерения роста на футы")
+    public InputComponentPage chooseFt() {
+        $(By.xpath("//*[text()=' футов/дюймов']/span")).click();
+        return  this;
     }
 }
 

@@ -30,7 +30,7 @@ public class HarrisBenedictMethodTest extends BaseTest {
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
     }
 
-    @Test(description = "зависимость результатов от выбор единиц измерения", expectedExceptions = {AssertionError.class})
+    @Test(description = "зависимость результатов от выбор единиц измерения результатов расчета", expectedExceptions = {AssertionError.class})
     public void checkChooseResult() {
         input.chooseHarrisBenedictMethod();
         inputAllData.inputCorrectAllData(47, 75, 199);
@@ -38,6 +38,19 @@ public class HarrisBenedictMethodTest extends BaseTest {
         String losingWeight = resultsComponent.getValueLosingWeightString();
         String fastLosingWeight = resultsComponent.getValueFastLosingWeightString();
         input.chooseResultKj()
+                .getCalculate();
+        result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+    }
+
+    @Test(description = "зависимость результатов от выбор единицы измерения веса",
+            expectedExceptions = {AssertionError.class})
+    public void checkChoosePound() {
+        input.chooseHarrisBenedictMethod();
+        inputAllData.inputCorrectAllData(47, 75, 199);
+        String constWeight = resultsComponent.getValueConstWeightString();
+        String losingWeight = resultsComponent.getValueLosingWeightString();
+        String fastLosingWeight = resultsComponent.getValueFastLosingWeightString();
+        input.choosePound()
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
     }
@@ -64,7 +77,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
     }
 
-    @Test(description = "зависимость результатов от изменения роста", expectedExceptions = {AssertionError.class})
+    @Test(description = "зависимость результатов от изменения роста",
+            expectedExceptions = {AssertionError.class})
     public void checkResultDependingInputFieldGrowth() {
         input.chooseHarrisBenedictMethod();
         inputAllData.inputCorrectAllData(47, 75, 199);
@@ -76,7 +90,7 @@ public class HarrisBenedictMethodTest extends BaseTest {
     }
 
     @Test(description = "проверка зависимости результата расчета от активности",
-            dataProvider = "dataForCheckChooseIntensiveLoad",
+            dataProvider = "dataForCheckChooseIntensiveLoad", dataProviderClass = DataProviderClass.class,
             expectedExceptions = {AssertionError.class})
     public void checkChooseIntensiveOfLoad(String load) {
         input.chooseHarrisBenedictMethod();
@@ -87,18 +101,5 @@ public class HarrisBenedictMethodTest extends BaseTest {
         input.chooseIntensityOfLoad(load)
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
-    }
-
-    @DataProvider(parallel = true)
-    public Object[][] dataForCheckChooseIntensiveLoad() {
-        return new Object[][]{
-                {"Основной обмен"},
-                {"минимум/отсутствие физической нагрузки"},
-                {"3 раза в неделю"},
-                {"5 раз в неделю"},
-                {"5 раз в неделю (интенсивно)"},
-                {"Каждый день интенсивно или два раза в день"},
-                {"Ежедневная физическая нагрузка+физическая работа"}
-        };
     }
 }

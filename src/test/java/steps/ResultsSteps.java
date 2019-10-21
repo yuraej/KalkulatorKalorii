@@ -3,6 +3,7 @@ package steps;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import pages.ResultsComponentPage;
+import sun.awt.image.OffScreenImage;
 
 import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selenide.$;
@@ -14,7 +15,6 @@ public class ResultsSteps {
     @Step("ожидаемое количество каллорий для быстрого похудения {fastLosingWeight}\n" +
             "похудения {losingWeight}\n" +
             "неизменного веса {constWeight}")
-
     public void validateDetails(String constWeight, String losingWeight, String fastLosingWeight) {
         $(By.id("submit")).shouldHave(value("Сколько нужно калорий в день"));
         assertEquals(result.getValueConstWeightString(), constWeight);
@@ -36,5 +36,4 @@ public class ResultsSteps {
     public void getErrorMessage(String message) {
         assertEquals($("#error").getText(), message);
     }
-
 }
