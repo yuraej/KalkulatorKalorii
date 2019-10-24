@@ -58,7 +58,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-              <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -92,5 +92,4 @@
             <version>3.141.59</version>
         </dependency>
     </dependencies>
-
 </project>

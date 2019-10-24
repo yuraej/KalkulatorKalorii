@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+    <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="added class logs and circleCi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/InputComponentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/InputComponentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResultsComponentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResultsComponentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ResultsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ResultsSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DataProviderClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/DataProviderClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HarrisBenedictMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HarrisBenedictMethodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/InputCorrectDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/InputCorrectDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/InputWrongDataWeightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/InputWrongDataWeightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MiflinSanJeroMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MiflinSanJeroMethodTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +68,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -129,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputWrongDataGrowthTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InputWrongDataAgeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="KalkulatorKalorii" />
       <extension name="coverage">
         <pattern>
@@ -138,24 +131,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InputWrongDataGrowthTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputWrongDataWeightTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="KalkulatorKalorii" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InputWrongDataWeightTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.InputWrongDataAgeTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -180,13 +156,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/home/yura/Документы/JAVA/KalkulatorKalorii/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="KalkulatorKalorii" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.InputCorrectDataTest" />
+        <item itemvalue="TestNG./home/yura/Документы/JAVA/KalkulatorKalorii/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG.InputWrongDataAgeTest" />
         <item itemvalue="TestNG.HarrisBenedictMethodTest" />
         <item itemvalue="TestNG.MiflinSanJeroMethodTest" />
-        <item itemvalue="TestNG.InputWrongDataWeightTest" />
-        <item itemvalue="TestNG.InputWrongDataGrowthTest" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571669998203</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added class logs and circleCi">
+      <created>1571900777631</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571900777631</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +263,8 @@
     <MESSAGE value="added new methods in classes of pages, steps, tests" />
     <MESSAGE value="done new structure of project" />
     <MESSAGE value="added class DataProviderClass" />
-    <option name="LAST_COMMIT_MESSAGE" value="added class DataProviderClass" />
+    <MESSAGE value="added class logs and circleCi" />
+    <option name="LAST_COMMIT_MESSAGE" value="added class logs and circleCi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="175" width="898" height="725" key="#GreenTest.enterGreenData" timestamp="1570937099909">
@@ -309,22 +303,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1164" y="296" width="447" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1571058945592" />
-    <state width="899" height="183" key="GridCell.Tab.0.bottom" timestamp="1571899020680">
+    <state width="899" height="232" key="GridCell.Tab.0.bottom" timestamp="1571925653769">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="899" height="183" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1571899020680" />
-    <state width="899" height="183" key="GridCell.Tab.0.center" timestamp="1571899020679">
+    <state width="899" height="232" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1571925653769" />
+    <state width="899" height="232" key="GridCell.Tab.0.center" timestamp="1571925653768">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="899" height="183" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1571899020679" />
-    <state width="899" height="183" key="GridCell.Tab.0.left" timestamp="1571899020679">
+    <state width="899" height="232" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1571925653768" />
+    <state width="899" height="232" key="GridCell.Tab.0.left" timestamp="1571925653768">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="899" height="183" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1571899020679" />
-    <state width="899" height="183" key="GridCell.Tab.0.right" timestamp="1571899020680">
+    <state width="899" height="232" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1571925653768" />
+    <state width="899" height="232" key="GridCell.Tab.0.right" timestamp="1571925653769">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="899" height="183" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571899020680" />
+    <state width="899" height="232" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571925653769" />
     <state width="899" height="186" key="GridCell.Tab.1.bottom" timestamp="1571582273781">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -353,18 +347,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="898" y="186" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1571734333561" />
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571670021533">
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571900797431">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571670021533" />
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571900797431" />
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1571055203330">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571055203330" />
-    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1571895860176">
+    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1571924734191">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571895860176" />
+    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571924734191" />
     <state x="1178" y="435" width="509" height="205" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1571485551113">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

@@ -9,6 +9,7 @@ import pages.ResultsComponentPage;
 import steps.InputDataSteps;
 import steps.ResultsSteps;
 import utils.AllureUtils;
+
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
@@ -21,14 +22,13 @@ public class BaseTest {
 
     @BeforeMethod
     public void openSite() {
-        Configuration.startMaximized = true;
         log.info("Открываем страницу с калькулятором калорий");
         open("https://www.calc.ru/kalkulyator-kalorii.html");
     }
 
-    @AfterMethod
+   /* @AfterMethod
     public void getScreenShot() {
         log.info("делаем снимок экрана");
         AllureUtils.takeScreenshot(getWebDriver());
-    }
+    }*/
 }
