@@ -1,11 +1,7 @@
 package steps;
 
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 import pages.ResultsComponentPage;
-import sun.awt.image.OffScreenImage;
-
-import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selenide.$;
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -16,7 +12,6 @@ public class ResultsSteps {
             "похудения {losingWeight}\n" +
             "неизменного веса {constWeight}")
     public void validateDetails(String constWeight, String losingWeight, String fastLosingWeight) {
-        $(By.id("submit")).shouldHave(value("Сколько нужно калорий в день"));
         assertEquals(result.getValueConstWeightString(), constWeight);
         assertEquals(result.getValueLosingWeightString(), losingWeight);
         assertEquals(result.getValueFastLosingWeightString(), fastLosingWeight);
@@ -26,7 +21,6 @@ public class ResultsSteps {
             "потеря веса - {losingWeight}\n" +
             "неизменный вес - {constWeight}")
     public void validateDetails(String day, String fastLosingWeight, String losingWeight, String constWeight) {
-        $(By.id("submit")).shouldHave(value("Сколько нужно калорий в день"));
         assertEquals(result.getValueConstWeightTable(day), constWeight);
         assertEquals(result.getValueLosingWeightTable(day), losingWeight);
         assertEquals(result.getValueFastLosingWeightTable(day), fastLosingWeight);

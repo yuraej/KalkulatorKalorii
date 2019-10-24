@@ -85,4 +85,15 @@ public class MiflinSanJeroMethodTest extends BaseTest {
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
     }
+
+    @Test(description = "проверка зависимости результата расчета от значения роста в футах и дюймах",
+            dataProvider = "dataForTestGrowthInFt", dataProviderClass = DataProviderClass.class,
+            expectedExceptions = {AssertionError.class})
+    public void checkResultDependingInputFieldGrowthFt(String foot) {
+        input.enterDataFieldAge(47)
+                .enterDataFieldWeight(75)
+                .chooseFt()
+                .enterDataGrowthFt(foot)
+                .getCalculate();
+    }
 }

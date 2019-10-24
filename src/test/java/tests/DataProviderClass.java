@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviderClass {
 
-    @DataProvider(parallel = false)
+    @DataProvider(parallel = true)
     public static Object[][] dataForTestString() {
         return new Object[][]{
                 {13, 41, 101, "1667 ккал/день", "1334 ккал/день", "1000 ккал/день"},
@@ -13,7 +13,7 @@ public class DataProviderClass {
         };
     }
 
-    @DataProvider(parallel = false)
+    @DataProvider(parallel = true)
     public static Object[][] dataForTestTable() {
         return new Object[][]{
                 {45, 95, 182, "Понедельник", "1869", "2492", "3115"},
@@ -29,9 +29,9 @@ public class DataProviderClass {
         return new Object[][]{
                 {"Основной обмен"},
                 {"минимум/отсутствие физической нагрузки"},
-                {"3 раза в неделю"},
                 {"5 раз в неделю"},
                 {"5 раз в неделю (интенсивно)"},
+                {"Каждый день"},
                 {"Каждый день интенсивно или два раза в день"},
                 {"Ежедневная физическая нагрузка+физическая работа"}
         };
@@ -74,7 +74,7 @@ public class DataProviderClass {
     }
 
     @DataProvider(parallel = true)
-    public Object[][] dataForTestFieldWeightSymbols() {
+    public static Object[][] dataForTestFieldWeightSymbols() {
         return new Object[][]{
                 {50, "-1", "Поле \"Вес\" должно быть числовым"},
                 {15, ".3", "Поле \"Вес\" должно быть числовым"},
@@ -84,10 +84,29 @@ public class DataProviderClass {
     }
 
     @DataProvider(parallel = true)
-    public Object[][] dataForTestWeightNumber() {
+    public static Object[][] dataForTestWeightNumber() {
         return new Object[][]{
                 {14, 40, "Пожалуйста, введите реальный вес"},
                 {79, 501, "Пожалуйста, введите реальный вес"}
         };
     }
+
+    @DataProvider(parallel = true)
+    public static Object[][] dataForTestGrowthInFt() {
+        return new Object[][]{
+                {"5 фт. 0 д."}, {"6 фт. 0 д."}, {"4 фт. 1 д."},
+                {"5 фт. 1 д."}, {"6 фт. 1 д."}, {"4 фт. 2 д."},
+                {"5 фт. 2 д."}, {"6 фт. 2 д."}, {"4 фт. 3 д."},
+                {"5 фт. 3 д."}, {"6 фт. 3 д."}, {"4 фт. 4 д."},
+                {"5 фт. 4 д."}, {"6 фт. 4 д."}, {"4 фт. 5 д."},
+                {"5 фт. 5 д."}, {"6 фт. 5 д."}, {"4 фт. 6 д."},
+                {"5 фт. 6 д."}, {"6 фт. 6 д."}, {"4 фт. 6 д."},
+                {"5 фт. 7 д."}, {"6 фт. 7 д."}, {"4 фт. 8 д."},
+                {"5 фт. 8 д."}, {"6 фт. 8 д."}, {"4 фт. 9 д."},
+                {"5 фт. 9 д."}, {"6 фт. 9 д."}, {"4 фт. 10 д."},
+                {"5 фт. 10 д."}, {"6 фт. 10 д."},
+    }
+
+    ;
+}
 }
