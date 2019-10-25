@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test suite">
-    <test name="TEST проверка калькулятора калорий">
+    <test name="TEST проверка полей ввода">
         <classes>
             <class name="tests.InputCorrectDataTest"/>
             <class name="tests.InputWrongDataAgeTest"/>
             <class name="tests.InputWrongDataWeightTest"/>
             <class name="tests.InputWrongDataGrowthTest"/>
-            <class name="tests.HarrisBenedictMethodTest"/>
-            <class name="tests.MiflinSanJeroMethodTest"/>
         </classes>
     </test>
+    <test name="TEST проверка расчета по методу Мифлина-Сан Жерона">
+        <classes>
+            <class name="tests.MiflinSanJeroMethodTest"/>
+        </classes>
+    </test><test name="TEST проверка расчета по методу Харриса-Бенедикта">
+    <classes>
+        <class name="tests.HarrisBenedictMethodTest"/>
+    </classes>
+</test>
 </suite>

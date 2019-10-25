@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="project setup - new pom.xml">
+    <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="project setup - new pom.xml (added dependency for selenide)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571981537263</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="project setup - new pom.xml (added dependency for selenide)">
+      <created>1571982111760</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1571982111760</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +294,8 @@
     <MESSAGE value="added class logs and circleCi" />
     <MESSAGE value="project setup" />
     <MESSAGE value="project setup - new pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="project setup - new pom.xml" />
+    <MESSAGE value="project setup - new pom.xml (added dependency for selenide)" />
+    <option name="LAST_COMMIT_MESSAGE" value="project setup - new pom.xml (added dependency for selenide)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="175" width="898" height="725" key="#GreenTest.enterGreenData" timestamp="1570937099909">
@@ -358,10 +366,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="899" height="186" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1571582273781" />
-    <state x="964" y="284" width="824" height="520" key="IDE.errors.dialog" timestamp="1571899636718">
+    <state x="964" y="284" width="824" height="520" key="IDE.errors.dialog" timestamp="1571982269863">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="964" y="284" width="824" height="520" key="IDE.errors.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571899636718" />
+    <state x="964" y="284" width="824" height="520" key="IDE.errors.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571982269863" />
     <state x="914" y="196" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1570935449039">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -370,10 +378,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="898" y="186" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1571734333561" />
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571981580093">
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571982129372">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571981580093" />
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571982129372" />
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1571055203330">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
