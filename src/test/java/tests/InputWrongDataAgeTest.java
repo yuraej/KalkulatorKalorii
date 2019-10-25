@@ -1,9 +1,13 @@
 package tests;
 
 import io.qameta.allure.Description;
-import org.testng.annotations.DataProvider;
+import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
+import utils.AllureUtils;
 
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
+@Log4j2
 public class InputWrongDataAgeTest extends BaseTest {
 
     @Test(dataProvider = "dataForTestFieldAgeSymbols", dataProviderClass = DataProviderClass.class,
@@ -13,6 +17,8 @@ public class InputWrongDataAgeTest extends BaseTest {
         input.enterDataFieldAge(age)
                 .getCalculate();
         result.getErrorMessage(message);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(dataProvider = "dataForTestFieldAgeNumber", dataProviderClass = DataProviderClass.class,
@@ -22,5 +28,7 @@ public class InputWrongDataAgeTest extends BaseTest {
         input.enterDataFieldAge(age)
                 .getCalculate();
         result.getErrorMessage(message);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 }

@@ -1,8 +1,13 @@
 package tests;
 
 import io.qameta.allure.Description;
+import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
+import utils.AllureUtils;
 
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
+@Log4j2
 public class InputWrongDataWeightTest extends BaseTest {
 
     @Test(dataProvider = "dataForTestFieldWeightSymbols", dataProviderClass = DataProviderClass.class,
@@ -13,6 +18,8 @@ public class InputWrongDataWeightTest extends BaseTest {
                 .enterDataFieldWeight(weight)
                 .getCalculate();
         result.getErrorMessage(message);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(dataProvider = "dataForTestWeightNumber", dataProviderClass = DataProviderClass.class,
@@ -23,5 +30,7 @@ public class InputWrongDataWeightTest extends BaseTest {
                 .enterDataFieldWeight(weight)
                 .getCalculate();
         result.getErrorMessage(message);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 }
