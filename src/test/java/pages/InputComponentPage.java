@@ -66,7 +66,7 @@ public class InputComponentPage {
 
     @Step("выбор методики расчета: Харриса-Бенедикта")
     public InputComponentPage chooseHarrisBenedictMethod() {
-        log.info("выбор методики расчета: Харрисф-Бенедикта");
+        log.info("выбор методики расчета: Харриса-Бенедикта");
         $(By.xpath("//*[contains(text(),\" Харриса-Бенедикта\")]/span")).click();
         return this;
     }
