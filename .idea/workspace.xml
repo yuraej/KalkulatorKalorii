@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="project setup - new pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571981131186</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="project setup - new pom.xml">
+      <created>1571981537263</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571981537263</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,10 +370,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="898" y="186" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1571734333561" />
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571981143777">
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1571981580093">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571981143777" />
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1571981580093" />
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1571055203330">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
