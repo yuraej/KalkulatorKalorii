@@ -13,7 +13,7 @@ public class ResultsComponentPage {
     private void waitSubmit() {
         log.info("ожидание надписи\"Сколько нужно калорий в день\". Установлено 7 сек.");
         SelenideElement wait = $(By.id("submit"));
-        wait.waitUntil(value("Сколько нужно калорий в день"), 7000);
+        wait.waitUntil(value("Сколько нужно калорий в день"), 10000);
     }
 
     @Step("Получение результата расчета для сохранения веса из строки")

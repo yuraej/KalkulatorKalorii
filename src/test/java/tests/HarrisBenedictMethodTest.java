@@ -1,7 +1,12 @@
 package tests;
 
+import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
+import utils.AllureUtils;
 
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
+@Log4j2
 public class HarrisBenedictMethodTest extends BaseTest {
 
     @Test(description = "проверка зависимости результатов от выбора метода расчета",
@@ -14,6 +19,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         input.chooseHarrisBenedictMethod()
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(description = "проверка зависимости результатов от пола",
@@ -27,6 +34,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         input.chooseGender()
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(description = "зависимость результатов от выбор единиц измерения результатов расчета", expectedExceptions = {AssertionError.class})
@@ -39,6 +48,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         input.chooseResultKj()
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(description = "зависимость результатов от выбор единицы измерения веса",
@@ -52,6 +63,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         input.choosePound()
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(description = "зависимость результатов от изменения возраста", expectedExceptions = {AssertionError.class})
@@ -63,6 +76,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         String fastLosingWeight = resultsComponent.getValueFastLosingWeightString();
         inputAllData.inputCorrectAllData(25, 75, 199);
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(description = "зависимость результатов от изменения веса", expectedExceptions = {AssertionError.class})
@@ -74,6 +89,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         String fastLosingWeight = resultsComponent.getValueFastLosingWeightString();
         inputAllData.inputCorrectAllData(47, 150, 199);
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(description = "зависимость результатов от изменения роста",
@@ -86,6 +103,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         String fastLosingWeight = resultsComponent.getValueFastLosingWeightString();
         inputAllData.inputCorrectAllData(47, 75, 170);
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(description = "проверка зависимости результата расчета от активности",
@@ -100,6 +119,8 @@ public class HarrisBenedictMethodTest extends BaseTest {
         input.chooseIntensityOfLoad(load)
                 .getCalculate();
         result.validateDetails(constWeight, losingWeight, fastLosingWeight);
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 
     @Test(description = "проверка зависимости результата расчета от значения роста в футах и дюймах",
@@ -112,5 +133,7 @@ public class HarrisBenedictMethodTest extends BaseTest {
                 .enterDataGrowthFt(foot)
                 .chooseHarrisBenedictMethod()
                 .getCalculate();
+        log.info("делаем снимок экрана");
+        AllureUtils.takeScreenshot(getWebDriver());
     }
 }
