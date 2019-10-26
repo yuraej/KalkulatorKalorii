@@ -6,6 +6,7 @@
             <class name="tests.InputCorrectDataTest"/>
         </classes>
     </test>
+    <!--
     <test name="TEST проверка расчета по методу Мифлина-Сан Жерона">
         <classes>
             <class name="tests.MiflinSanJeroMethodTest"/>
@@ -15,16 +16,17 @@
         <classes>
             <class name="tests.HarrisBenedictMethodTest"/>
         </classes>
-    </test>
+    </test> -->
     <test name="TEST проверка результатов расчета при некорректном вводе в поле ВОЗРАСТ">
         <classes>
             <class name="tests.InputWrongDataAgeTest"/>
         </classes>
-    </test><test name="TEST провека результата расчета при некорректном вводе в поле ВЕС">
-    <classes>
-        <class name="tests.InputWrongDataWeightTest"/>
-    </classes>
-</test>
+    </test>
+    <test name="TEST провека результата расчета при некорректном вводе в поле ВЕС">
+        <classes>
+            <class name="tests.InputWrongDataWeightTest"/>
+        </classes>
+    </test>
     <test name="TEST проверка результата расчета при некорректном вводе в поле РОСТ">
         <classes>
             <class name="tests.InputWrongDataGrowthTest"/>
