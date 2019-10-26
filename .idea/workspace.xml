@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment=" new setup of testng.xml">
+    <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment=" new setup of pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572089267502</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary=" new setup of pom.xml">
+      <created>1572090246947</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1572090246947</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +350,8 @@
     <MESSAGE value="I don't know what I did" />
     <MESSAGE value="new pom.xml and new setup of testng.xml" />
     <MESSAGE value=" new setup of testng.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value=" new setup of testng.xml" />
+    <MESSAGE value=" new setup of pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value=" new setup of pom.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="175" width="898" height="725" key="#GreenTest.enterGreenData" timestamp="1570937099909">
@@ -381,22 +390,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1164" y="296" width="447" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1571980073367" />
-    <state width="873" height="265" key="GridCell.Tab.0.bottom" timestamp="1572087127285">
+    <state width="873" height="265" key="GridCell.Tab.0.bottom" timestamp="1572095628851">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="873" height="265" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1572087127285" />
-    <state width="873" height="265" key="GridCell.Tab.0.center" timestamp="1572087127284">
+    <state width="873" height="265" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1572095628851" />
+    <state width="873" height="265" key="GridCell.Tab.0.center" timestamp="1572095628850">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="873" height="265" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1572087127284" />
-    <state width="873" height="265" key="GridCell.Tab.0.left" timestamp="1572087127284">
+    <state width="873" height="265" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1572095628850" />
+    <state width="873" height="265" key="GridCell.Tab.0.left" timestamp="1572095628850">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="873" height="265" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1572087127284" />
-    <state width="873" height="265" key="GridCell.Tab.0.right" timestamp="1572087127285">
+    <state width="873" height="265" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1572095628850" />
+    <state width="873" height="265" key="GridCell.Tab.0.right" timestamp="1572095628850">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="873" height="265" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1572087127285" />
+    <state width="873" height="265" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1572095628850" />
     <state width="873" height="186" key="GridCell.Tab.1.bottom" timestamp="1572083125278">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -413,10 +422,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="873" height="186" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1572083125278" />
-    <state x="964" y="284" width="824" height="520" key="IDE.errors.dialog" timestamp="1571982269863">
+    <state x="964" y="284" width="824" height="520" key="IDE.errors.dialog" timestamp="1572090619811">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="964" y="284" width="824" height="520" key="IDE.errors.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571982269863" />
+    <state x="964" y="284" width="824" height="520" key="IDE.errors.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1572090619811" />
     <state x="914" y="196" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1570935449039">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -425,18 +434,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="898" y="186" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1571734333561" />
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1572089275749">
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1572090264578">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1572089275749" />
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1572090264578" />
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1571055203330">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571055203330" />
-    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1572087989609">
+    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1572094872053">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1572087989609" />
+    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1572094872053" />
     <state x="1178" y="435" width="509" height="205" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1571485551113">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
