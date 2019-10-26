@@ -91,7 +91,7 @@ public class DataProviderClass {
         };
     }
 
-    @DataProvider(parallel = false)
+    @DataProvider(parallel = true)
     public static Object[][] dataForTestGrowthInFt() {
         return new Object[][]{
                 {"5 фт. 0 д."}, {"6 фт. 0 д."}, {"4 фт. 1 д."},
