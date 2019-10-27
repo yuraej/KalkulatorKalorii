@@ -78,11 +78,11 @@ public class HarrisBenedictMethodTest extends BaseTest {
     @Test(description = "зависимость результатов от изменения роста")
     public void checkResultDependingInputFieldGrowth() {
         input.chooseHarrisBenedictMethod();
-        inputAllData.inputCorrectAllData(47, 75, 199);
+        inputAllData.inputCorrectAllData(47, 75, 170);
         String constWeight = resultsComponent.getValueConstWeightString();
         String losingWeight = resultsComponent.getValueLosingWeightString();
         String fastLosingWeight = resultsComponent.getValueFastLosingWeightString();
-        inputAllData.inputCorrectAllData(47, 75, 170);
+        inputAllData.inputCorrectAllData(47, 75, 199);
         result.comparisonCalculationResults(constWeight, losingWeight, fastLosingWeight);
     }
 

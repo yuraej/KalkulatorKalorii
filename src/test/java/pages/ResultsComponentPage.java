@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class ResultsComponentPage {
 
     private void waitSubmit() {
-        log.info("ожидание надписи\"Сколько нужно калорий в день\". Установлено 7 сек.");
+        log.info("ожидание надписи\"Сколько нужно калорий в день\". Установлено 10 сек.");
         SelenideElement wait = $(By.id("submit"));
         wait.waitUntil(value("Сколько нужно калорий в день"), 10000);
     }
@@ -40,21 +40,21 @@ public class ResultsComponentPage {
     @Step("Получение результата расчета для сохранения веса из таблицы для дня {day}")
     public String getValueConstWeightTable(String day) {
         waitSubmit();
-        log.info("получение расчета из таблицы для сохранения веса для дня {day}");
+        log.info("получение расчета из таблицы для сохранения веса");
         return $(By.xpath("//strong[text()='" + day + "']/../../td[@align='center'][3]")).getText();
     }
 
     @Step("Получение результата расчета для снижения веса из таблицы для дня {day}")
     public String getValueLosingWeightTable(String day) {
         waitSubmit();
-        log.info("получение расчета из таблицы для потери веса для дня {day}");
+        log.info("получение расчета из таблицы для потери веса");
         return $(By.xpath("//strong[text()='" + day + "']/../../td[@align='center'][2]")).getText();
     }
 
     @Step("Получение результата расчета для быстрого снижения веса из таблицы для дня {day}")
     public String getValueFastLosingWeightTable(String day) {
         waitSubmit();
-        log.info("получение расчета из таблицы для быстрой потери веса для дня {day}");
+        log.info("получение расчета из таблицы для быстрой потери веса");
         return $(By.xpath("//strong[text()='" + day + "']/../../td[@align='center'][1]")).getText();
     }
 }
