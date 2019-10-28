@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="added method &quot;comparisonCalculationResults&quot; in class ResultsSteps">
+    <list default="true" id="21589c89-b04e-49f5-95d7-c627b4981f54" name="Default Changelist" comment="setup project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResultsComponentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResultsComponentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HarrisBenedictMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HarrisBenedictMethodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,7 @@
       <recent name="$PROJECT_DIR$/target" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HarrisBenedictMethodTest">
+  <component name="RunManager" selected="TestNG.HarrisBenedictMethodTest.checkResultDependingInputFieldGrowth">
     <configuration name="HarrisBenedictMethodTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="KalkulatorKalorii" />
       <extension name="coverage">
@@ -179,8 +178,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HarrisBenedictMethodTest" />
         <item itemvalue="TestNG.HarrisBenedictMethodTest.checkResultDependingInputFieldGrowth" />
+        <item itemvalue="TestNG.HarrisBenedictMethodTest" />
         <item itemvalue="TestNG.InputCorrectDataTest" />
         <item itemvalue="TestNG.HarrisBenedictMethodTest.checkChooseGender" />
         <item itemvalue="TestNG.HarrisBenedictMethodTest.checkChooseCalculationMethod" />
@@ -346,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572168599250</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="setup project">
+      <created>1572171707956</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1572171707956</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +391,8 @@
     <MESSAGE value="added in pom.xml -   &lt;suiteXmlFiles&gt;                                                                 &lt;file&gt;src/test/resources/testng.xml&lt;/file&gt;&#10;                      &lt;/suiteXmlFiles&gt;" />
     <MESSAGE value="setup testng.xml" />
     <MESSAGE value="added method &quot;comparisonCalculationResults&quot; in class ResultsSteps" />
-    <option name="LAST_COMMIT_MESSAGE" value="added method &quot;comparisonCalculationResults&quot; in class ResultsSteps" />
+    <MESSAGE value="setup project" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="927" y="175" width="898" height="725" key="#GreenTest.enterGreenData" timestamp="1570937099909">
@@ -424,22 +431,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1164" y="296" width="447" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1571980073367" />
-    <state width="873" height="265" key="GridCell.Tab.0.bottom" timestamp="1572171661169">
+    <state width="873" height="265" key="GridCell.Tab.0.bottom" timestamp="1572244536795">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="873" height="265" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1572171661169" />
-    <state width="873" height="265" key="GridCell.Tab.0.center" timestamp="1572171661168">
+    <state width="873" height="265" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1572244536795" />
+    <state width="873" height="265" key="GridCell.Tab.0.center" timestamp="1572244536795">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="873" height="265" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1572171661168" />
-    <state width="873" height="265" key="GridCell.Tab.0.left" timestamp="1572171661168">
+    <state width="873" height="265" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1572244536795" />
+    <state width="873" height="265" key="GridCell.Tab.0.left" timestamp="1572244536794">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="873" height="265" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1572171661168" />
-    <state width="873" height="265" key="GridCell.Tab.0.right" timestamp="1572171661169">
+    <state width="873" height="265" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1572244536794" />
+    <state width="873" height="265" key="GridCell.Tab.0.right" timestamp="1572244536795">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="873" height="265" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1572171661169" />
+    <state width="873" height="265" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1572244536795" />
     <state width="873" height="186" key="GridCell.Tab.1.bottom" timestamp="1572083125278">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -468,18 +475,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="898" y="186" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1571734333561" />
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1572168613847">
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1572171724382">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1572168613847" />
+    <state x="1032" y="274" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1572171724382" />
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1571055203330">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="942" y="138" width="878" height="800" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1571055203330" />
-    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1572153125691">
+    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1572244031725">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1572153125691" />
+    <state x="1163" y="326" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1572244031725" />
     <state x="1178" y="435" width="509" height="205" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1571485551113">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
