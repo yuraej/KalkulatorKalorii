@@ -3,8 +3,6 @@ package steps;
 import io.qameta.allure.Step;
 import pages.ResultsComponentPage;
 
-import static com.codeborne.selenide.Selenide.$;
-
 public class ResultsSteps {
     ResultsComponentPage result = new ResultsComponentPage();
 
@@ -45,8 +43,10 @@ public class ResultsSteps {
 
     @Step("ожидаемое сообщение при неккоректном вводе: \"{message}\"")
     public void getErrorMessage(String message) {
-        if (!$("#error").getText().equals(message)) {
-            throw new AssertionError("Полученно неверное сообщение об ошибке");
+        if (!result.getErrorMessage().equals(message)) {
+            throw new AssertionError("Полученно неверное сообщение об ошибке:\n" +
+                    "есть - " + result.getErrorMessage() + "\n" +
+                    "надо -  " + message);
         }
     }
 

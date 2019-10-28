@@ -19,7 +19,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void openSite() {
-        Configuration.startMaximized = true;
+        Configuration.headless = true;
         Configuration.screenshots = false;
         log.info("Открываем страницу с калькулятором калорий");
         open("https://www.calc.ru/kalkulyator-kalorii.html");

@@ -57,4 +57,9 @@ public class ResultsComponentPage {
         log.info("получение расчета из таблицы для быстрой потери веса");
         return $(By.xpath("//strong[text()='" + day + "']/../../td[@align='center'][1]")).getText();
     }
+
+    @Step("получаем сообщение об ошибке ввода")
+    public String getErrorMessage() {
+        return $("#error").getText();
+    }
 }
