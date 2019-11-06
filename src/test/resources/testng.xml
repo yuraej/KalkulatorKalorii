@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite" thread-count="6" parallel="tests" data-provider-thread-count="1">
+    <test name="TEST проверка расчета по методу Мифлина-Сан Жерона">
+        <classes>
+            <class name="tests.MiflinSanJeroMethodTest"/>
+        </classes>
+    </test>
+    <test name="TEST проверка результатов расчета при некорректном вводе в поле ВОЗРАСТ">
+        <classes>
+            <class name="tests.InputWrongDataAgeTest"/>
+        </classes>
+    </test>
+    <test name="TEST провека результата расчета при некорректном вводе в поле ВЕС">
+        <classes>
+            <class name="tests.InputWrongDataWeightTest"/>
+        </classes>
+    </test>
+    <test name="TEST ввод во все поля корректных значений">
+        <classes>
+            <class name="tests.InputCorrectDataTest"/>
+        </classes>
+    </test>
+    <test name="TEST проверка результата расчета при некорректном вводе в поле РОСТ">
+        <classes>
+            <class name="tests.InputWrongDataGrowthTest"/>
+        </classes>
+    </test>
+    <test name="TEST проверка расчета по методу Харриса-Бенедикта">
+        <classes>
+            <class name="tests.HarrisBenedictMethodTest"/>
+        </classes>
+    </test>
+</suite>
